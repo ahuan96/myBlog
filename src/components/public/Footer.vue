@@ -30,5 +30,8 @@ export default {
   border-top: 1px solid #ccc;
   line-height: 100px;
   text-align: center;
+  background: #bbded6;
+  color: #ffffff;
+  font-size: 30px;
 }
 </style>

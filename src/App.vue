@@ -22,9 +22,26 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+@deep: ~'>>>';
 #app{
+  font-family: Avenir,Helvetica,Arial,sans-serif;
   margin: 0 auto;
   color: #909399;
+  .el-header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9;
+    background: #ffffff;
+  }
+  .el-main {
+    padding-top: 60px;
+  }
+  // @{deep} .el-footer {
+  //   width: 100%;
+  //   position: fixed;
+  //   bottom:20px;
+  // }
 }
 </style>

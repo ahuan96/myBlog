@@ -11,7 +11,7 @@
           @click="changeNav(item)"
         >
           <div class="nav-cont">
-            <i :class="item.icon"></i>
+            <!-- <i :class="item.icon"></i> -->
             <router-link :to="item.path">{{item.title}}</router-link>
           </div>
           <div class="nav-bot"></div>
@@ -28,7 +28,7 @@ export default {
     return {
       navList: [
         { id: '1', title: '首页', path: '/', icon: 'el-icon-sunrise-1' },
-        { id: '2', title: '文章', path: '/', icon: 'el-icon-notebook-1' },
+        { id: '2', title: '分类', path: '/', icon: 'el-icon-notebook-1' },
         { id: '3', title: '归档', path: '/', icon: 'el-icon-map-location' },
         { id: '4', title: '关于', path: '/', icon: 'el-icon-guide' },
       ],
@@ -86,7 +86,7 @@ export default {
       .nav-bot{
         transition: 0.5s;
         width: 0;
-        height: 2px;
+        height: 0px;
         background: #1989fa;
         margin: 0 auto;
       }
@@ -99,6 +99,7 @@ export default {
       }
       .nav-bot{
         width: 100%;
+        height: 2px;
       }
     }
   }

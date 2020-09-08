@@ -1,12 +1,28 @@
 <template>
   <div class='home'>
-    home
+    <el-container>
+    <el-main>
+      <ArticleList></ArticleList>
+    </el-main>
+    <el-aside width="300px">
+      <Me></Me>
+      <Hot></Hot>
+    </el-aside>
+  </el-container>
   </div>
 </template>
 
 <script>
+import ArticleList from '@/components/ArticleList'
+import Me from '@/components/card/Me'
+import Hot from '@/components/card/Hot'
 export default {
   name: 'Home',
+  components:{
+    ArticleList,
+    Me,
+    Hot
+  },
   data () {
     return {
 
@@ -26,11 +42,15 @@ export default {
 </script>
 
 <style lang='less' scoped>
+@deep: ~">>>";
 .home {
   min-height: 500px;
-}
-.home  /deep/ .el-footer {
-    padding: 0;
+  width: 65%;
+  margin: 0 auto;
+  @{deep} .el-aside{
+    padding-top: 20px;
   }
+}
+
 
 </style>

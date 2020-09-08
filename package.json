@@ -10,12 +10,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "axios": "^0.20.0",
     "element-ui": "^2.13.2",
     "less": "^3.9",
     "less-loader": "^5.0.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
